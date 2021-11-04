@@ -82,7 +82,7 @@ input[type=radio].visually-hidden {
 }
 
 .page-header {
-  background-image: url("/img/main_picture_1.png");
+  background-image: url("../img/main_picture_1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1001,7 +1001,7 @@ input[type=radio].visually-hidden {
 }
 
 .booking-rooms__wrapper {
-  background-image: url("/img/willian-justen-de-vasconcellos.png");
+  background-image: url("../img/willian-justen-de-vasconcellos.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -1013,7 +1013,7 @@ input[type=radio].visually-hidden {
   line-height: 44px;
   padding-top: 82px;
   padding-bottom: 48px;
-  color: #45505A;
+  color: #45505a;
 }
 
 .booking-rooms__button {
@@ -1367,7 +1367,7 @@ input[type=radio].visually-hidden {
     display: block;
     margin-top: 146px;
     height: 70px;
-    background-color: #004CA1;
+    background-color: #004ca1;
   }
 
   .page-header__wrapper-footer .page-header__logo-tg {
@@ -1511,6 +1511,6 @@ input[type=radio].visually-hidden {
   }
 }
 
-.webp .page-header { background-image: url(/img/main_picture_1.webp); }
+.webp .page-header { background-image: url(../img/main_picture_1.webp); }
 
-.webp .booking-rooms__wrapper { background-image: url(/img/willian-justen-de-vasconcellos.webp); }
+.webp .booking-rooms__wrapper { background-image: url(../img/willian-justen-de-vasconcellos.webp); }
