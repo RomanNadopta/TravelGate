@@ -9,11 +9,11 @@
   <link rel="preload" href="fonts/Rubik-Light.woff2" as="font">
   <link rel="preload" href="fonts/Rubik-Bold.woff2" as="font">
   <link rel="preload" href="fonts/SairaCondensed-Bold.woff2" as="font">
-  <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-  <link rel="stylesheet" href="css/normalize.min.css">
-  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
-  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js" type="text/javascript"></script>
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
   <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
   <title>Travelgate</title>
 </head>
@@ -376,161 +376,171 @@
   <main class="page-main">
 
     <section class="popular-places popular-cities">
+      <h4 class="popular-places__title popular-cities__title">Популярні міста</h4>
       <div class="popular-places__wrapper popular-cities__wrapper slider">
-        <h4 class="popular-places__title popular-cities__title">Популярні міста</h4>
-
-        <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp" srcset="img/kiev/Kyiv-mobile.webp, img/kiev/Kyiv-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/kiev/Kyiv-mobile.jpg" srcset="./img/kiev/Kyiv-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/kiev/Ukraine-Kyiv-mobile.webp, img/kiev/Ukraine-Kyiv-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/kiev/Ukraine-Kyiv-mobile.jpg"
-                  srcset="img/kiev/Ukraine-Kyiv-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-cities__images-title">
-              <p class="popular-cities images-title__city">Kуiv</p>
-              <p class="popular-cities images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp" srcset="img/dubai/dubai1-mobile.webp 1x, img/dubai/dubai1-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/dubai/dubai1-mobile.jpg" srcset="img/dubai/dubai1-mobile@2x.jpg 2x"
-                  alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp" srcset="img/dubai/dubai1-mobile.webp 1x, img/dubai/dubai1-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/dubai/dubai1-mobile.jpg" srcset="img/dubai/dubai1-mobile@2x.jpg 2x"
-                  alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-cities__images-title">
-              <p class="popular-cities_  images-title__city">Dubai</p>
-              <p class="popular-cities_  images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/almaty/almaty1-mobile.webp 1x, img/almaty/almaty1-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/almaty/almaty1-mobile.jpg" srcset="img/almaty/almaty1-mobile@2x.jpg 2x"
-                  alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/almaty/almaty1-mobile.webp 1x, img/almaty/almaty1-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/almaty/almaty1-mobile.jpg" srcset="img/almaty/almaty1-mobile@2x.jpg 2x"
-                  alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-cities__images-title">
-              <p class="popular-cities__images-title__city">Almaty</p>
-              <p class="popular-cities__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/hurghada/hughada-hotel-mobile.webp, img/hurghada/hughada-hotel-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/hurghada/hughada-hotel-mobile.jpg"
-                  srcset="img/hurghada/hughada-hotel-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/hurghada/hurghada-mobile.webp, img/hurghada/hurghada-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/hurghada/hurghada-mobile.jpg"
-                  srcset="img/hurghada/hurghada-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-cities__images-title">
-              <p class="popular-cities__images-title__city">Hurghada</p>
-              <p class="popular-cities__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp" srcset="img/prague/prague-mobile.webp, img/prague/prague-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/prague/prague-mobile.jpg" srcset="img/prague/prague-mobile2x.jpg 2x"
-                  alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-cities__items swiper-slide">
-              <picture>
-                <source type="image/webp"
-                  srcset="img/prague/Prague-charles-bridge-mobile.webp, img/prague/Prague-charles-bridge-mobile@2x.webp 2x">
-                <img class="img-cities" src="img/prague/Prague-charles-bridge-mobile.jpg"
-                  srcset="img/prague/Prague-charles-bridge-mobile@2x.jpg 2x" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-cities__images-title">
-              <p class="popular-cities__images-title__city">Prague</p>
-              <p class="popular-cities__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-cities__wiev-all">
+        <div class="popular-cities__list">
 
           <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
             <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp" srcset="img/kemer/Kemer-mobile.webp 1x, img/kemer/Kemer-mobile@2x.webp 2x">
-                  <img class="img-cities" src="img/kemer/Kemer-mobile.jpg" srcset="img/kemer/Kemer-mobile@2x.jpg 2x"
-                    alt="Kemer">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kiev/Kiev-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kiev/Kiev-desktop.jpg">
+                  <source type="image/webp" srcset="img/kiev/Kyiv-mobile.webp">
+                  <img class="img-cities" src="img/kiev/Kyiv-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp"
-                    srcset="img/kemer/Turkey-Kemer-mobile.webp 1x, img/kemer/Turkey-Kemer-mobile@2x.webp 2x">
-                  <img class="img-cities" src="img/kemer/Turkey-Kemer-mobile.jpg"
-                    srcset="img/kemer/Turkey-Kemer-mobile@2x.jpg 2x" alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kiev/ukraine-kyiv-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kiev/ukraine-kyiv-desktop.jpg">
+                  <source type="image/webp" srcset="img/kiev/Ukraine-Kyiv-mobile.webp">
+                  <img class="img-cities" src="img/kiev/Ukraine-Kyiv-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Kуiv</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/dubai/dubai1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="./img/dubai/dubai1-desktop.jpg">
+                  <source type="image/webp" srcset="img/dubai/dubai1-mobile.webp">
+                  <img class="img-cities" src="img/dubai/dubai1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/dubai/dubai1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="./img/dubai/dubai1-desktop.jpg">
+                  <source type="image/webp" srcset="img/dubai/dubai1-mobile.webp">
+                  <img class="img-cities" src="img/dubai/dubai1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Dubai</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list  swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/almaty/almaty-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/almaty/almaty-desktop.jpg">
+                  <source type="image/webp" srcset="img/almaty/almaty1-mobile.webp">
+                  <img class="img-cities" src="img/almaty/almaty1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/almaty/almaty-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/almaty/almaty-desktop.jpg">
+                  <source type="image/webp" srcset="img/almaty/almaty1-mobile.webp">
+                  <img class="img-cities" src="img/almaty/almaty1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Almaty</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/hurghada/hughada-hotel-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/hurghada/hughada-hotel-desktop.jpg">
+                  <source type="image/webp" srcset="img/hurghada/hughada-hotel-mobile.webp">
+                  <img class="img-cities" src="img/hurghada/hughada-hotel-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width:1110px)" srcset="img/hurghada/hurghada-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/hurghada/hurghada-desktop.jpg">
+                  <source type="image/webp" srcset="img/hurghada/hurghada-mobile.webp">
+                  <img class="img-cities" src="img/hurghada/hurghada-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Hurghada</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/prague/prague-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/prague/prague-desktop.jpg">
+                  <source type="image/webp" srcset="img/prague/prague-mobile.webp">
+                  <img class="img-cities" src="img/prague/prague-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/prague/Prague-charles-bridge-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/prague/Prague-charles-bridge-desktop.jpg">
+                  <source type="image/webp" srcset="img/prague/Prague-charles-bridge-mobile.webp">
+                  <img class="img-cities" src="img/prague/Prague-charles-bridge-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Prague</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="popular-cities__more--photos">
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list  swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kemer/kemer-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kemer/kemer-desktop.jpg">
+                  <source type="image/webp" srcset="img/kemer/Kemer-mobile.webp">
+                  <img class="img-cities big-photos" src="img/kemer/Kemer-mobile.jpg" alt="Kemer">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kemer/turkey-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kemer/turkey-desktop.jpg">
+                  <source type="image/webp" srcset="img/kemer/Turkey-Kemer-mobile.webp">
+                  <img class="img-cities big-photos" src="img/kemer/Turkey-Kemer-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__images-title popular-cities__images-title">
@@ -547,18 +557,18 @@
             <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp"
-                    srcset="img/moscow/moscow1-mobile.webp 1x, img/moscow/moscow1-mobile@2x.webp 2x">
-                  <img class="img-cities" src="img/moscow/moscow1-mobile.jpg"
-                    srcset="img/moscow/moscow1-mobile@2x.jpg 2x" alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow1-mobile.webp">
+                  <img class="img-cities" src="img/moscow/moscow1-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp"
-                    srcset="img/moscow/moscow-mobile.webp 1x, img/moscow/moscow-mobile@2x.webp 2x">
-                  <img class="img-cities" src="img/moscow/moscow-mobile.jpg" srcset="img/moscow/moscow-mobile@2x.jpg 2x"
-                    alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow-mobile.webp">
+                  <img class="img-cities" src="img/moscow/moscow-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__images-title popular-cities__images-title">
@@ -575,17 +585,18 @@
             <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp 1x, img/minsk/minsk-mobile@2x.webp 2x">
-                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" srcset="img/minsk/minsk-mobile@2x.jpg 2x"
-                    alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities big-photos" src="img/minsk/minsk-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-cities__items swiper-slide">
                 <picture>
-                  <source type="image/webp"
-                    srcset="img/minsk/minsk1-mobile.webp 1x, img/minsk/minsk1-mobile@2x.webp 2x ">
-                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" srcset="img/minsk/minsk1-mobile@2x.jpg 2x"
-                    alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk1-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities big-photos" src="img/minsk/minsk1-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__images-title popular-cities__images-title">
@@ -598,8 +609,209 @@
             </ul>
           </div>
         </div>
-        <div class="wiev-all">
-          <a class="travel-form__search wiev-all__cities">
+
+
+        <div class="popular-cities__wiev-all popular-cities__wiev-all--closed">
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list  swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kemer/kemer-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kemer/kemer-desktop.jpg">
+                  <source type="image/webp" srcset="img/kemer/Kemer-mobile.webp">
+                  <img class="img-cities" src="img/kemer/Kemer-mobile.jpg" alt="Kemer">
+                </picture>
+
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/kemer/turkey-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/kemer/turkey-desktop.jpg">
+                  <source type="image/webp" srcset="img/kemer/Turkey-Kemer-mobile.webp">
+                  <img class="img-cities" src="img/kemer/Turkey-Kemer-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Kemer</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow1-mobile.webp">
+                  <img class="img-cities" src="img/moscow/moscow1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow-mobile.webp">
+                  <img class="img-cities" src="img/moscow/moscow-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Moscow</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Minsk</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Minsk</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Minsk</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Minsk</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+          <div class="popular-places__image-slider popular-cities__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-cities__images-list swiper-wrapper">
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-cities__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/minsk/minsk-desktop.jpg">
+                  <source type="image/webp" srcset="img/minsk/minsk1-mobile.webp">
+                  <img class="img-cities" src="img/minsk/minsk1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-cities__images-title">
+                <p class="popular-cities__images-title__city">Minsk</p>
+                <p class="popular-cities__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="wiev-all wiev-all__cities ">
+          <a class="travel-form__search wiev-all__button">
             Переглянути всі
             <img src="img/icons/magnifying.svg" alt="">
           </a>
@@ -608,6 +820,7 @@
     </section>
 
     <section class="booking-rooms">
+      <img class="willian-justen" src="img/willian-justen-de-vasconcellos-desktop2.png" alt="">
       <div class="booking-rooms__wrapper">
         <h2 class="booking-rooms__title">Забронювати номер</h2>
         <div class="booking-rooms__button">
@@ -620,158 +833,199 @@
     </section>
 
     <section class="popular-places popular-countries">
+
+      <h4 class="popular-places__title popular-cities__title">Популярні країни</h4>
       <div class="popular-places__wrapper popular-countries__wrapper slider">
-        <h4 class="popular-places__title popular-cities__title">Популярні країни</h4>
-
-        <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-                <img class="img-countries" src="img/ukraine/ukraine-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/ukraine/ukraine1-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class=" popular-places__images-title popular-countries__images-title">
-              <p class="popular-countries__images-title__country">Ukraine</p>
-              <p class="popular-countries__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-
-
-        <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/egypt/egypt-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-                <img class="img-countries" src="img/egypt/egypt1-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-countries__images-title">
-              <p class="popular-countries__images-title__country">Egypt</p>
-              <p class="popular-countries__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/turkey/turkey-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/turkey/turkey-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-countries__images-title">
-              <p class="popular-countries__images-title__country">Turkey</p>
-              <p class="popular-countries__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/france/france-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/france/france1-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-countries__images-title">
-              <p class="popular-countries__images-title__country">France</p>
-              <p class="popular-countries__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-
-        <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
-          <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/czech-republic/czech-republic-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-
-                <img class="img-countries" src="img/czech-republic/Prague-charles-bridge-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-                <img class="img-countries" src="img/czech-republic/czech-republic1-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__items popular-countries__items swiper-slide">
-              <picture>
-                <img class="img-countries" src="img/czech-republic/czech-republic2-mobile.jpg" alt="">
-              </picture>
-            </li>
-            <li class="popular-places__images-title popular-countries__images-title">
-              <p class="popular-countries__images-title__country">Czech Republic</p>
-              <p class="popular-countries__images-title__hotel">35 845 hotels</p>
-            </li>
-            <li class="button-next">
-              <div class="swiper-button-next"></div>
-            </li>
-          </ul>
-        </div>
-        <div class="popular-countries__wiev-all">
+        <div class="popular-countries__list">
 
           <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
             <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/ukraine/ukraine-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/ukraine/ukraine-desktop.jpg">
+                  <source type="image/webp" srcset="img/ukraine/ukraine-mobile.webp">
+                  <img class="img-countries" src="img/ukraine/ukraine-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/ukraine/ukraine1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/ukraine/ukraine1-desktop.jpg">
+                  <source type="image/webp" srcset="img/ukraine/ukraine1-mobile.webp">
+                  <img class="img-countries" src="img/ukraine/ukraine1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class=" popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Ukraine</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
 
+
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/egypt/egypt-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/egypt/egypt-desktop.jpg">
+                  <source type="image/webp" srcset="img/egypt/egypt-mobile.webp">
+                  <img class="img-countries" src="img/egypt/egypt-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/egypt/egypt1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/egypt/egypt1-desktop.jpg">
+                  <source type="image/webp" srcset="img/egypt/egypt1-mobile.webp">
+                  <img class="img-countries" src="img/egypt/egypt1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Egypt</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="/img/turkey/turkey-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/turkey/turkey-desktop.jpg">
+                  <source type="image/webp" srcset="img/turkey/turkey-mobile.webp">
+                  <img class="img-countries big-photos" src="img/turkey/turkey-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="/img/turkey/turkey-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/turkey/turkey-desktop.jpg">
+                  <source type="image/webp" srcset="img/turkey/turkey-mobile.webp">
+                  <img class="img-countries big-photos" src="img/turkey/turkey-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Turkey</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/france/france-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/france/france-desktop.jpg">
+                  <source type="image/webp" srcset="img/france/france-mobile.webp">
+                  <img class="img-countries" src="img/france/france-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/france/france1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/france/france1-desktop.jpg">
+                  <source type="image/webp" srcset="img/france/france1-mobile.webp">
+                  <img class="img-countries" src="img/france/france1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">France</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/prague/prague-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/prague/prague-desktop.jpg">
+                  <source type="image/webp" srcset="img/prague/prague-mobile.webp">
+                  <img class="img-countries" src="img/prague/prague-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/prague/Prague-charles-bridge-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/prague/Prague-charles-bridge-desktop.jpg">
+                  <source type="image/webp" srcset="img/prague/Prague-charles-bridge-mobile.webp">
+                  <img class="img-countries" src="img/prague//Prague-charles-bridge-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/czech-republic/czech-republic1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/czech-republic/czech-republic1-desktop.jpg">
+                  <source type="image/webp" srcset="img/czech-republic/czech-republic1-mobile.webp">
+                  <img class="img-countries" src="img/czech-republic/czech-republic1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/czech-republic/czech-republic2-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/czech-republic/czech-republic2-desktop.jpg">
+                  <source type="image/webp" srcset="img/czech-republic/czech-republic2-mobile.webp">
+                  <img class="img-countries" src="img/czech-republic/czech-republic2-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Czech Republic</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="popular-countries__more--photos">
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/russia/russia-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/russia/russia-desktop.jpg">
+                  <source type="image/webp" srcset="img/russia/russia-mobile.webp">
                   <img class="img-countries" src="img/russia/russia-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
-
-                  <img class="img-countries" src="img/russia/moscow-mobile.jpg" alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
-
-                  <img class="img-countries" src="img/russia/moscow1-mobile.jpg" alt="">
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow1-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow1-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__images-title popular-countries__images-title">
@@ -788,13 +1042,17 @@
             <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
-
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
                   <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
-
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
                   <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
                 </picture>
               </li>
@@ -812,13 +1070,210 @@
             <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
+                  <img class="img-countries big-photos" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
+                  <img class="img-countries big-photos" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">UAE</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+        </div>
 
+        <div class="popular-countries__wiev-all popular-countries__wiev-all--closed">
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/russia/russia-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/russia/russia-desktop.jpg">
+                  <source type="image/webp" srcset="img/russia/russia-mobile.webp">
+                  <img class="img-countries" src="img/russia/russia-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow1-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Russia</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
+                  <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
+                  <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Greece</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
                   <img class="img-countries" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
                 </picture>
               </li>
               <li class="popular-places__items popular-countries__items swiper-slide">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
+                  <img class="img-countries" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">UAE</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
 
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/russia/russia-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/russia/russia-desktop.jpg">
+                  <source type="image/webp" srcset="img/russia/russia-mobile.webp">
+                  <img class="img-countries" src="img/russia/russia-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/moscow/moscow1-desktop.jpg">
+                  <source type="image/webp" srcset="img/moscow/moscow1-mobile.webp">
+                  <img class="img-countries" src="img/moscow/moscow1-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Russia</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
+                  <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)" srcset="img/greece/greece-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/greece/greece-desktop.jpg">
+                  <source type="image/webp" srcset="img/greece/greece-mobile.webp">
+                  <img class="img-countries" src="img/greece/greece-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__images-title popular-countries__images-title">
+                <p class="popular-countries__images-title__country">Greece</p>
+                <p class="popular-countries__images-title__hotel">35 845 hotels</p>
+              </li>
+              <li class="button-next">
+                <div class="swiper-button-next"></div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="popular-places__image-slider popular-countries__images-slider swiper-container">
+            <ul class="popular-places__images-list popular-countries__images-list swiper-wrapper">
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
+                  <img class="img-countries" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
+                </picture>
+              </li>
+              <li class="popular-places__items popular-countries__items swiper-slide">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1110px)"
+                    srcset="img/uae/United-Arab-Emirates-desktop.webp">
+                  <source media="(min-width: 1110px)" srcset="img/uae/United-Arab-Emirates-desktop.jpg">
+                  <source type="image/webp" srcset="img/uae/United-Arab-Emirates-mobile.webp">
                   <img class="img-countries" src="img/uae/United-Arab-Emirates-mobile.jpg" alt="">
                 </picture>
               </li>
@@ -833,8 +1288,9 @@
           </div>
         </div>
 
-        <div class="wiev-all">
-          <a class="travel-form__search wiev-all__countries">
+
+        <div class="wiev-all wiev-all__countries">
+          <a class="travel-form__search wiev-all__button">
             Переглянути всі
             <img src="img/icons/magnifying.svg" alt="">
           </a>
@@ -843,8 +1299,8 @@
     </section>
 
     <section class="main__about-us">
-      <h3 class="about-us__title">Про нас</h3>
       <div class="about-us__info">
+        <h3 class="about-us__title">Про нас</h3>
         <p class="about-us__article">
           Eget diam fringilla ut ullamcorper non blandit. Bibendum vivamus nisl at vitae suspendisse rutrum commodo
           faucibus viverra. Fringilla eu nisl mattis facilisis tincidunt nunc, non placerat. Pellentesque id sodales
@@ -911,7 +1367,12 @@
         </div>
       </div>
       <div class="about-us__mobile-photo">
-        <img class="mobile-photo" src="img/about-us-1.png" alt="">
+        <picture>
+          <source type="image/webp" media="(min-width: 1110px)" srcset="img/about_us-desctop.webp">
+          <source media="(min-width: 1110px)" srcset="img/about_us-desctop.png">
+          <source type="image/webp" srcset="img/about-us-1.webp">
+          <img class="mobile-photo" src="img/about-us-1.png" alt="">
+        </picture>
       </div>
     </section>
   </main>
@@ -963,14 +1424,14 @@
           <p>(044) 244-11-45</p>
         </div>
       </div>
-      <div class="page-footer__conditions">
-        <div class="page-footer__condition-list">
-          <p class="page-footer__conditions-item">умови</p>
-          <p class="page-footer__site-map">карта сайту</p>
-        </div>
-        <div class="page-footer__licence">
-          <p>&copy; 2020 travelgate, All rights reserved</p>
-        </div>
+    </div>
+    <div class="page-footer__conditions">
+      <div class="page-footer__condition-list">
+        <p class="page-footer__conditions-item">умови</p>
+        <p class="page-footer__site-map">карта сайту</p>
+      </div>
+      <div class="page-footer__licence">
+        <p>&copy; 2020 travelgate, All rights reserved</p>
       </div>
     </div>
   </footer>

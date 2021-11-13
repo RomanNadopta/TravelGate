@@ -194,7 +194,7 @@ if (document.querySelector(".popular-cities__wiev-all")) {
   let popularCitiesAll = document.querySelector(".popular-cities__wiev-all");
   let wievAllCities = document.querySelector(".wiev-all__cities");
   wievAllCities.addEventListener("click", function () {
-    popularCitiesAll.style.display = "block";
+    popularCitiesAll.classList.add("popular-cities__wiev-all--opened");
     wievAllCities.style.display = "none";
   });
 }
@@ -219,15 +219,6 @@ if (document.querySelector(".popular-cities__images-slider")) {
     slidesPerView: 1,
   });
 }
-
-// if (document.querySelector(".popular-cities__wiev-all")) {
-//   let popularCitiesAll = document.querySelector(".popular-cities__wiev-all");
-//   let wievAllCities = document.querySelector(".wiev-all__cities");
-//   wievAllCities.addEventListener("click", function () {
-//     popularCitiesAll.style.display = "block";
-//     wievAllCities.style.display = "none";
-//   });
-// }
 
 if (document.querySelector(".popular-countries__images-slider")) {
   new Swiper(".popular-countries__images-slider", {
@@ -256,7 +247,7 @@ if (document.querySelector(".popular-countries__wiev-all")) {
   );
   let wievAllCountries = document.querySelector(".wiev-all__countries");
   wievAllCountries.addEventListener("click", function () {
-    popularCountriesAll.style.display = "block";
+    popularCountriesAll.classList.add("popular-countries__wiev-all--opened");
     wievAllCountries.style.display = "none";
   });
 }

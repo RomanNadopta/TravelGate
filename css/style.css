@@ -932,6 +932,9 @@ input[type=radio].visually-hidden {
 }
 
 .popular-places__images-list {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
   overflow: hidden;
 }
 
@@ -952,13 +955,6 @@ input[type=radio].visually-hidden {
   z-index: 2;
 }
 
-.img-cities {
-  width: 100%;
-  z-index: 1;
-  border-radius: 4px;
-  mix-blend-mode: multiply;
-}
-
 .popular-places__items {
   min-height: 128px;
   padding-top: 18px;
@@ -966,6 +962,26 @@ input[type=radio].visually-hidden {
   background: -o-linear-gradient(bottom, #000000 0%, rgba(0, 0, 0, 0) 34.84%);
   background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 34.84%);
   border-radius: 4px;
+  height: auto;
+}
+
+.swiper-button-next {
+  top: 55%;
+  color: #fff;
+  --swiper-navigation-size: 22px;
+}
+
+.wiev-all {
+  margin-top: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.img-cities {
+  width: 100%;
+  z-index: 1;
+  border-radius: 4px;
+  mix-blend-mode: multiply;
 }
 
 .popular-cities__images-title__city {
@@ -978,20 +994,22 @@ input[type=radio].visually-hidden {
   font-size: 14px;
 }
 
-.swiper-button-next {
-  top: 55%;
-  color: #fff;
-  --swiper-navigation-size: 22px;
-}
-
-.popular-cities__wiev-all {
+.popular-cities__wiev-all--closed {
   display: none;
 }
 
-.wiev-all {
-  margin-top: 16px;
-  text-align: center;
-  cursor: pointer;
+.popular-cities__wiev-all--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.popular-cities__more--photos {
+  display: none;
 }
 
 .booking-rooms {
@@ -1001,7 +1019,7 @@ input[type=radio].visually-hidden {
 }
 
 .booking-rooms__wrapper {
-  background: url("../img/willian-justen-de-vasconcellos.png");
+  background-image: url("../img/willian-justen-de-vasconcellos.png");
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 8px;
@@ -1026,6 +1044,10 @@ input[type=radio].visually-hidden {
   text-align: center;
 }
 
+.willian-justen {
+  display: none;
+}
+
 .img-countries {
   width: 100%;
   min-height: 128px;
@@ -1035,8 +1057,18 @@ input[type=radio].visually-hidden {
   mix-blend-mode: multiply;
 }
 
-.popular-countries__wiev-all {
+.popular-countries__wiev-all--closed {
   display: none;
+}
+
+.popular-countries__wiev-all--opened {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .popular-countries__images-title__country {
@@ -1047,6 +1079,10 @@ input[type=radio].visually-hidden {
   margin-top: 10px;
   font-weight: 100;
   font-size: 14px;
+}
+
+.popular-countries__more--photos {
+  display: none;
 }
 
 .main__about-us {
@@ -1097,11 +1133,15 @@ input[type=radio].visually-hidden {
 }
 
 .reservation-icon__bed {
-  margin-top: 13px;
+  margin-top: 0px;
 }
 
-.reservation-icon:nth-child(3) {
-  margin-top: -4px;
+.reservation-icon__canada {
+  margin-top: -14px;
+}
+
+.reservation-icon__earth {
+  margin-top: -10px;
 }
 
 .about-us__advantages-describe p {
@@ -1262,7 +1302,7 @@ input[type=radio].visually-hidden {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1110px) {
   .page-header__wrapper {
     position: relative;
     padding-left: 90px;
@@ -1495,6 +1535,362 @@ input[type=radio].visually-hidden {
     position: absolute;
     width: 240px;
   }
+
+  .popular-places {
+    max-width: 1086px;
+    margin: 0 auto;
+  }
+
+  .popular-places__title {
+    text-align: left;
+    font-size: 37px;
+    margin-left: 8px;
+    color: #004CA1;
+  }
+
+  .popular-places__images-list {
+    width: 255px;
+    height: auto;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+
+  .popular-places__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .wiev-all {
+    position: absolute;
+    top: 24.8%;
+    left: 75.5%;
+  }
+
+  .wiev-all__button {
+    width: 255px;
+  }
+
+  .popular-cities__wiev-all--opened {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .popular-cities__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .img-cities {
+    width: 255px;
+    height: 255px;
+  }
+
+  .big-photos {
+    height: 530px;
+  }
+
+  .popular-cities__list div:nth-child(2) {
+    position: relative;
+    right: 25%;
+    top: 50%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .popular-cities__list div:nth-child(3) {
+    position: relative;
+    top: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+
+  .popular-cities__list div:nth-child(4) {
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-right: 0;
+  }
+
+  .popular-cities__list div:nth-child(5) {
+    position: relative;
+    top: 100%;
+  }
+
+  .popular-cities__more--photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .popular-cities__more--photos > div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .popular-cities__more--photos > div:nth-child(2) {
+    position: relative;
+    bottom: 200%;
+    left: 200%;
+  }
+
+  .popular-cities__more--photos > div:nth-child(3) {
+    position: absolute;
+    top: 279px;
+    right: 2px;
+  }
+
+  .popular-cities__wiev-all > div:nth-child(1) {
+    position: absolute;
+    left: 74.8%;
+    top: 0;
+  }
+
+  .popular-cities__wiev-all > div:nth-child(2) {
+    position: absolute;
+    bottom: 40%;
+  }
+
+  .wiev-all {
+    position: absolute;
+    top: 24.8%;
+    left: 75.5%;
+  }
+
+  .wiev-all__cities-button {
+    width: 255px;
+  }
+
+  .booking-rooms {
+    position: relative;
+    padding-top: 160px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+  }
+
+  .booking-rooms__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1086px;
+    height: 274px;
+    background-image: url("../img/willian-justen-de-vasconcellos-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .booking-rooms__title {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .booking-rooms__button {
+    position: absolute;
+    padding-right: 68px;
+    top: 36%;
+    right: 0;
+  }
+
+  .popular-countries__wiev-all--opened {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .popular-countries__wrapper {
+    position: relative;
+  }
+
+  .popular-countries__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .img-countries {
+    width: 255px;
+    height: 255px;
+  }
+
+  .big-photos {
+    height: 530px;
+  }
+
+  .popular-countries__list div:nth-child(2) {
+    position: relative;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    bottom: 33.4%;
+  }
+
+  .popular-countries__list div:nth-child(4) {
+    position: relative;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    right: 50%;
+    top: 66.5%;
+  }
+
+  .popular-countries__list div:nth-child(5) {
+    position: relative;
+    top: 33.2%;
+  }
+
+  .popular-countries__more--photos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .popular-countries__more--photos > div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .popular-countries__more--photos > div:nth-child(2) {
+    position: absolute;
+    top: 552px;
+    left: 50%;
+  }
+
+  .popular-countries__more--photos > div:nth-child(3) {
+    position: absolute;
+    top: 278px;
+    right: 3px;
+  }
+
+  .popular-countries__wiev-all > div:nth-child(1) {
+    position: absolute;
+    bottom: 25.2%;
+  }
+
+  .popular-countries__wiev-all > div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 74.8%;
+  }
+
+  .main__about-us {
+    width: 1070px;
+    margin: 0 auto;
+    margin-top: 196px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .about-us__info {
+    width: 38%;
+  }
+
+  .about-us__title {
+    font-size: 37px;
+    padding-bottom: 40px;
+    text-align: left;
+    color: #004CA1;
+  }
+
+  .about-us__mobile-photo {
+    position: absolute;
+    right: 16px;
+    width: 56%;
+    min-height: 300px;
+  }
+
+  .reservation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .reservation-icon {
+    width: 8%;
+  }
+
+  .page-footer__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+
+  .page-footer__info-list {
+    width: 308px;
+  }
+
+  .page-footer__conditions {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 90px;
+    padding-top: 88px;
+  }
+
+  .page-footer__condition-list {
+    padding-top: 0;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+
+  .page-footer__licence {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    padding-right: 40px;
+  }
+}
+
+@media (min-width: 1786px) {
+  .willian-justen {
+    display: block;
+    position: absolute;
+    top: -70%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1513,4 +1909,9 @@ input[type=radio].visually-hidden {
 
 .webp .page-header { background: url(../img/main_picture_1.webp); }
 
-.webp .booking-rooms__wrapper { background: url(../img/willian-justen-de-vasconcellos.webp); }
+.webp .booking-rooms__wrapper { background-image: url(../img/willian-justen-de-vasconcellos.webp); }
+
+@media (min-width: 1110px) {
+
+  .webp .booking-rooms__wrapper { background-image: url(../img/willian-justen-de-vasconcellos-desktop.webp); }
+}
