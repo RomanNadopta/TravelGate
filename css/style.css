@@ -1519,12 +1519,6 @@ input[type=radio].visually-hidden {
   margin-top: 18px;
 }
 
-.swiper-wrapper {
-  -webkit-transition-timing-function: linear;
-       -o-transition-timing-function: linear;
-          transition-timing-function: linear;
-}
-
 @media (min-width: 564px) {
   .daterangepicker {
     width: auto;
