@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preload" href="fonts/Rubik-Regular.woff2" as="font">
+  <link rel="preload" href="fonts/Rubik-Light.woff2" as="font">
+  <link rel="preload" href="fonts/Rubik-Bold.woff2" as="font">
+  <link rel="preload" href="fonts/SairaCondensed-Bold.woff2" as="font">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <script src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+  <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+  <title>Travelgate</title>
+</head>
+
+<body>
+  <svg display="none">
+    <symbol id="ukraine_flag" viewBox="0 0 18 12">
+      <rect y="0.242371" width="17.3653" height="5.50578" fill="#20A1FF" />
+      <rect y="5.74817" width="17.3653" height="5.50578" fill="#FEC90D" />
+    </symbol>
+    <symbol id="mark" viewBox="0 0 14 17">
+      <path
+        d="M12.1999 6.55935C12.1999 9.64807 10.2917 12.1853 6.58329 15.022C2.78602 12.1897 0.967163 9.64807 0.967163 6.55935C0.967163 3.47064 3.48146 1.01382 6.58329 1.01382C9.68512 1.01382 12.1999 3.47064 12.1999 6.55935Z"
+        stroke="" />
+      <circle cx="6.58356" cy="6.38335" r="2.37312" stroke="" />
+    </symbol>
+  </svg>
+  <header class="second-page__header">
+    <div class="page-header__wrapper second-page__header-wrapper">
+      <div class="page-header__logo">
+        <a class="page-header__logo-travelgate" href="index.html">Travelgate</a>
+      </div>
+      <div class="language">
+        <svg class="ukraine-language__flag" width="23" height="19">
+          <use xlink:href="#ukraine_flag"></use>
+        </svg>
+        <p class="ukraine-language">ua</p>
+      </div>
+      <nav class="main-nav main-nav--closed">
+        <button class="main-nav__toggle" type="button"></button>
+        <div class="main-nav__wrapper">
+          <div class="main-nav__list">
+            <ul class="site-list">
+              <li class="site-list__item">
+                <a href="form.html" class="blog">Блог</a>
+              </li>
+              <li class="site-list__item">
+                <a href="" class="about-us">Про нас</a>
+              </li>
+              <li class="site-list__item">
+                <a href="" class="sign-in">увійти</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="second-page__main">
+    <div class="place-navigation__wrapper">
+      <ul class="place-navigation">
+        <li>
+          Головна
+          <img src="./img/icons/right-arrow.svg" alt="">
+        </li>
+        <li>
+          Пошук
+          <img src="./img/icons/right-arrow.svg" alt="">
+        </li>
+        <li>
+          США
+          <img src="./img/icons/right-arrow.svg" alt="">
+        </li>
+        <li>Сан-Франциско</li>
+      </ul>
+    </div>
+
+    <div class="city-info">
+      <h3 class="city-title">Сан-Франциско</h3>
+
+      <div class="city-article">
+        <p class="city-text">Lorem ipsum dolor sit amet, conse cteturadipiscing elit. Massa in diam soll ic itu dindui
+          lobortis eu gravida adipiscing. Massa in diam sollicitudin dui eu grfsavig Lorem ipsum dolor sit amur
+          adipiscing
+          elit. Massa in diam solcitudin dui lobortis eu gravida adipiscing. Massa in diam ipsum dolor sit amur
+          adipiscingipsum
+          dol sollicitudin dui adipiscingeu grfsavig.
+        </p>
+        <p class="detail-text">Детальніше &gt;</p>
+      </div>
+    </div>
+    <div class="sort-hotels__wrapper">
+      <div class="sort-hotels">
+
+        <div class="circle-bar">
+          <p class="circle-bar__percent">0%</p>
+          <svg class="circle-bar__svg" viewbox="0 0 200 200">
+            <circle r="80" cx="100" cy="100" fill="none" stroke-width="" stroke="" />
+          </svg>
+        </div>
+        <div class="amount-of-hotels">
+          <p class="amount-of-hotels__text"><span class="amount-of-hotels--start">125</span> з 1234 готелів доступно</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="hotel">
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_1.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_1.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list ">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_6.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_6.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_6.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_6.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_1.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_1.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_1.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_1.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_6.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_6.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_5.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_5.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_6.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_6.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_1.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_1.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_3.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_3.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_4.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_4.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+
+      <div class="hotel-wrapper">
+        <div class="hotel-image__wrapper">
+          <div class="hotel-image__list">
+            <div class="hotel-image__slider swiper">
+              <ul class="hotel-image__slider-list swiper-wrapper">
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_6.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_6.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_1.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_1.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+                <li class="hotel-image__item swiper-slide">
+                  <picture>
+                    <source type="image/webp" srcset="img/hotels-photo/amaris-apart-photo_2.webp">
+                    <img class="hotel-photo" src="img/hotels-photo/amaris-apart-photo_2.jpg" alt="amaris apartment">
+                  </picture>
+                  <div class="review">
+                    <p>дуже добре</p>
+                    <p class="review-rating">4,2</p>
+                    <p class="number-of-review ">186 000 відгуків</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="hotel-describe">
+          <h3 class="hotel-title">Amaris Apart lorem ipsum text</h3>
+          <img src="img/icons/star-rating.svg" alt="star rating">
+          <p>
+            <svg class="hotel-mark__svg">
+              <use xlink:href="#mark"></use>
+            </svg>
+            Hatipirimi Mah. 135 Sok/ No:35
+          </p>
+          <div class="hotel-advantages">
+            <img src="img/icons/parking.svg" alt="parking">
+            <img src="img/icons/cocktail.svg" alt="cocktail">
+            <img src="img/icons/cutlery.svg" alt="cutlery">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+            <img src="img/icons/room-service.svg" alt="room service">
+            <img src="img/icons/taxi.svg" alt="taxi">
+          </div>
+          <div class="line-bottom"></div>
+        </div>
+        <div class="hotel-room">
+          <h3>Studio</h3>
+          <p>є в наявності інші номери</p>
+          <p><img src="img/icons/credit-card.svg" alt="credit card">
+            Повернення коштів лише до 22,08,2020
+          </p>
+          <p><img src="img/icons/cutlery.svg" alt="cutlery">
+            Харчування: сніданок, обід, вечеря
+          </p>
+        </div>
+        <div class="hotel-price">
+          <p>105 000 eur</p>
+          <p>ніч на двох</p>
+          <a class="travel-form__search choose-hotel__number" href="">Вибрати номер</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__info">
+      <div class="page-footer__info-wrapper">
+        <h3 class="page-fotter__info-title">Про нас</h3>
+        <ul class="page-footer__info-list">
+          <li>Особистісний різноманіття і прийняття</li>
+          <li>Доступність</li>
+          <li>Довіра і безпека</li>
+          <li>Airbnb Citizen</li>
+          <li>Олімпійські ігри</li>
+          <li>Прес-центр</li>
+        </ul>
+      </div>
+      <div class="page-footer__info-wrapper">
+        <h3 class="page-footer__info-title">Про нас</h3>
+        <ul class="page-footer__info-list">
+          <li>Журнал Airbnb Magazine</li>
+          <li>Airbnb для бізнесу</li>
+          <li>Запросіть друзів</li>
+          <li>Робота</li>
+        </ul>
+      </div>
+      <div class="page-footer__info-wrapper">
+        <h3 class="page-footer__info-title">Про нас</h3>
+        <ul class="page-footer__info-list">
+          <li>Приймайте гостей</li>
+          <li>Організувати онлайн-Враження</li>
+          <li>Звернення генерального директора Брайана Ческі</li>
+          <li>Відповідальний прийом гостей</li>
+          <li>Open Homes</li>
+          <li>центр ресурсів</li>
+          <li>центр спілкування</li>
+        </ul>
+      </div>
+      <div class="page-footer__contacts">
+        <div class="page-footer__contacts-wrapper">
+          <h3>Контакти</h3>
+          <p>79015, м. Львів, вул. Федьковича, 58</p>
+          <p>info@misto.travel</p>
+        </div>
+        <div class="page-footer__contacts-wrapper page-footer__hot-line">
+          <h3>Гаряча лінія</h3>
+          <p>(044) 244-11-45</p>
+          <p>(044) 244-11-45</p>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__conditions">
+      <div class="page-footer__condition-list">
+        <p class="page-footer__conditions-item">умови</p>
+        <p class="page-footer__site-map">карта сайту</p>
+      </div>
+      <div class="page-footer__licence">
+        <p>&copy; 2020 travelgate, All rights reserved</p>
+      </div>
+      <div class="social-networks">
+        <a class="telegram" href="#">
+          <img src="img/icons/043-telegram.svg" alt="">
+        </a>
+        <a class="facebook" href="#">
+          <img src="img/icons/026-facebook.svg" alt="">
+        </a>
+        <a class="instagram" href="#">
+          <img src="img/icons/028-instagram.svg" alt="">
+        </a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>

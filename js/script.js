@@ -25,168 +25,174 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-let travelSelect = function () {
-  let travelSelect = document.querySelector(".travel-select");
-  let leftArrow = document.querySelector(".arrow-left");
-  let travelSelectWrapper = document.querySelector(".travel-select__wrapper");
-  let selectItems = document.querySelectorAll(".directions-items li");
+if (document.querySelector(".travel-select")) {
+  let travelSelect = function () {
+    let travelSelect = document.querySelector(".travel-select");
+    let leftArrow = document.querySelector(".arrow-left");
+    let travelSelectWrapper = document.querySelector(".travel-select__wrapper");
+    let selectItems = document.querySelectorAll(".directions-items li");
 
-  leftArrow.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--opened")) {
-      travelSelect.classList.remove("travel-select--opened");
-      travelSelect.classList.add("travel-select--closed");
-    }
-  });
-
-  travelSelectWrapper.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--closed")) {
-      travelSelect.classList.remove("travel-select--closed");
-      travelSelect.classList.add("travel-select--opened");
-    }
-  });
-
-  selectItems.forEach((item) => {
-    item.addEventListener("click", selectChoose);
-  });
-
-  function selectChoose() {
-    let text = this.firstElementChild.innerText;
-
-    let currentText =
-      this.closest(".travel-select").querySelector(".current-describe");
-    currentText.innerText = text;
-    travelSelect.classList.remove("travel-select--opened");
-    travelSelect.classList.add("travel-select--closed");
-  }
-};
-
-travelSelect();
-
-let travelDateSelect = function () {
-  let travelSelect = document.querySelector(".travel-select__date");
-  let leftArrow = document.querySelector(".arrow-left__date");
-  let travelSelectWrapper = document.querySelector(
-    ".travel-select__wrapper-date"
-  );
-
-  leftArrow.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select__date--opened")) {
-      travelSelect.classList.remove("travel-select__date--opened");
-      travelSelect.classList.add("travel-select--closed");
-    }
-  });
-
-  travelSelectWrapper.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--closed")) {
-      travelSelect.classList.remove("travel-select--closed");
-      travelSelect.classList.add("travel-select__date--opened");
-    }
-  });
-};
-
-travelDateSelect();
-
-let travelVisitorsSelect = function () {
-  let travelSelect = document.querySelector(".travel-select__visitors");
-  let leftArrow = document.querySelector(".arrow-left__visitors");
-  let travelSelectWrapper = document.querySelector(
-    ".travel-select__wrapper-visitors"
-  );
-
-  leftArrow.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--opened")) {
-      travelSelect.classList.remove("travel-select--opened");
-      travelSelect.classList.add("travel-select--closed");
-    }
-  });
-
-  travelSelectWrapper.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--closed")) {
-      travelSelect.classList.remove("travel-select--closed");
-      travelSelect.classList.add("travel-select--opened");
-    }
-  });
-
-  let btnAdult = document.querySelectorAll(".button-count__adult");
-  btnAdult.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      let direction = this.dataset.direction;
-      let countAdult = document.querySelector(".count-adult");
-      let currentAdult = document.querySelector(".count-adult__current");
-      let currentValue = +countAdult.innerText;
-      let newValue;
-
-      if (direction === "plus") {
-        newValue = currentValue + 1;
-      } else {
-        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+    leftArrow.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--opened")) {
+        travelSelect.classList.remove("travel-select--opened");
+        travelSelect.classList.add("travel-select--closed");
       }
-      countAdult.innerText = newValue;
-      currentAdult.innerText = newValue;
     });
-  });
 
-  let btnChildren = document.querySelectorAll(".button-count__children");
-  btnChildren.forEach((btn) => {
-    btn.addEventListener("click", function () {
-      let direction = this.dataset.direction;
-      let countChildren = document.querySelector(".count-children");
-      let currentChildren = document.querySelector(".count-children-current");
-      let currentValue = +countChildren.innerText;
-      let newValue;
-
-      if (direction === "plus") {
-        newValue = currentValue + 1;
-      } else {
-        newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+    travelSelectWrapper.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--closed")) {
+        travelSelect.classList.remove("travel-select--closed");
+        travelSelect.classList.add("travel-select--opened");
       }
-      countChildren.innerText = newValue;
-      currentChildren.innerText = newValue;
     });
-  });
-};
 
-travelVisitorsSelect();
+    selectItems.forEach((item) => {
+      item.addEventListener("click", selectChoose);
+    });
 
-let travelNationalitySelect = function () {
-  let travelSelect = document.querySelector(".travel-select__nationality");
-  let leftArrow = document.querySelector(".arrow-left__nationality");
-  let travelSelectWrapper = document.querySelector(
-    ".travel-select__wrapper-nationality"
-  );
-  let selectItems = document.querySelectorAll(".nationality-items li");
+    function selectChoose() {
+      let text = this.firstElementChild.innerText;
 
-  leftArrow.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--opened")) {
+      let currentText =
+        this.closest(".travel-select").querySelector(".current-describe");
+      currentText.innerText = text;
       travelSelect.classList.remove("travel-select--opened");
       travelSelect.classList.add("travel-select--closed");
     }
-  });
+  };
+  travelSelect();
+}
 
-  travelSelectWrapper.addEventListener("click", function () {
-    if (travelSelect.classList.contains("travel-select--closed")) {
-      travelSelect.classList.remove("travel-select--closed");
-      travelSelect.classList.add("travel-select--opened");
-    }
-  });
-
-  selectItems.forEach((item) => {
-    item.addEventListener("click", selectChoose);
-  });
-
-  function selectChoose() {
-    let text = this.firstElementChild.innerText;
-
-    let currentText = this.closest(".travel-select__nationality").querySelector(
-      ".current-describe"
+if (document.querySelector(".travel-select__date")) {
+  let travelDateSelect = function () {
+    let travelSelect = document.querySelector(".travel-select__date");
+    let leftArrow = document.querySelector(".arrow-left__date");
+    let travelSelectWrapper = document.querySelector(
+      ".travel-select__wrapper-date"
     );
-    currentText.innerText = text;
-    travelSelect.classList.remove("travel-select--opened");
-    travelSelect.classList.add("travel-select--closed");
-  }
-};
 
-travelNationalitySelect();
+    leftArrow.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select__date--opened")) {
+        travelSelect.classList.remove("travel-select__date--opened");
+        travelSelect.classList.add("travel-select--closed");
+      }
+    });
+
+    travelSelectWrapper.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--closed")) {
+        travelSelect.classList.remove("travel-select--closed");
+        travelSelect.classList.add("travel-select__date--opened");
+      }
+    });
+  };
+  travelDateSelect();
+}
+
+if (document.querySelector(".travel-select__visitors")) {
+  let travelVisitorsSelect = function () {
+    let travelSelect = document.querySelector(".travel-select__visitors");
+    let leftArrow = document.querySelector(".arrow-left__visitors");
+    let travelSelectWrapper = document.querySelector(
+      ".travel-select__wrapper-visitors"
+    );
+
+    leftArrow.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--opened")) {
+        travelSelect.classList.remove("travel-select--opened");
+        travelSelect.classList.add("travel-select--closed");
+      }
+    });
+
+    travelSelectWrapper.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--closed")) {
+        travelSelect.classList.remove("travel-select--closed");
+        travelSelect.classList.add("travel-select--opened");
+      }
+    });
+
+    let btnAdult = document.querySelectorAll(".button-count__adult");
+    btnAdult.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        let direction = this.dataset.direction;
+        let countAdult = document.querySelector(".count-adult");
+        let currentAdult = document.querySelector(".count-adult__current");
+        let currentValue = +countAdult.innerText;
+        let newValue;
+
+        if (direction === "plus") {
+          newValue = currentValue + 1;
+        } else {
+          newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+        }
+        countAdult.innerText = newValue;
+        currentAdult.innerText = newValue;
+      });
+    });
+
+    let btnChildren = document.querySelectorAll(".button-count__children");
+    btnChildren.forEach((btn) => {
+      btn.addEventListener("click", function () {
+        let direction = this.dataset.direction;
+        let countChildren = document.querySelector(".count-children");
+        let currentChildren = document.querySelector(".count-children-current");
+        let currentValue = +countChildren.innerText;
+        let newValue;
+
+        if (direction === "plus") {
+          newValue = currentValue + 1;
+        } else {
+          newValue = currentValue - 1 > 0 ? currentValue - 1 : 0;
+        }
+        countChildren.innerText = newValue;
+        currentChildren.innerText = newValue;
+      });
+    });
+  };
+
+  travelVisitorsSelect();
+}
+
+if (document.querySelector(".travel-select__nationality")) {
+  let travelNationalitySelect = function () {
+    let travelSelect = document.querySelector(".travel-select__nationality");
+    let leftArrow = document.querySelector(".arrow-left__nationality");
+    let travelSelectWrapper = document.querySelector(
+      ".travel-select__wrapper-nationality"
+    );
+    let selectItems = document.querySelectorAll(".nationality-items li");
+
+    leftArrow.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--opened")) {
+        travelSelect.classList.remove("travel-select--opened");
+        travelSelect.classList.add("travel-select--closed");
+      }
+    });
+
+    travelSelectWrapper.addEventListener("click", function () {
+      if (travelSelect.classList.contains("travel-select--closed")) {
+        travelSelect.classList.remove("travel-select--closed");
+        travelSelect.classList.add("travel-select--opened");
+      }
+    });
+
+    selectItems.forEach((item) => {
+      item.addEventListener("click", selectChoose);
+    });
+
+    function selectChoose() {
+      let text = this.firstElementChild.innerText;
+
+      let currentText = this.closest(
+        ".travel-select__nationality"
+      ).querySelector(".current-describe");
+      currentText.innerText = text;
+      travelSelect.classList.remove("travel-select--opened");
+      travelSelect.classList.add("travel-select--closed");
+    }
+  };
+
+  travelNationalitySelect();
+}
 
 // https://qna.habr.com/q/240483
 
@@ -196,6 +202,17 @@ if (document.querySelector(".popular-cities__wiev-all")) {
   wievAllCities.addEventListener("click", function () {
     popularCitiesAll.classList.add("popular-cities__wiev-all--opened");
     wievAllCities.style.display = "none";
+  });
+}
+
+if (document.querySelector(".popular-countries__wiev-all")) {
+  let popularCountriesAll = document.querySelector(
+    ".popular-countries__wiev-all"
+  );
+  let wievAllCountries = document.querySelector(".wiev-all__countries");
+  wievAllCountries.addEventListener("click", function () {
+    popularCountriesAll.classList.add("popular-countries__wiev-all--opened");
+    wievAllCountries.style.display = "none";
   });
 }
 
@@ -241,13 +258,20 @@ if (document.querySelector(".popular-countries__images-slider")) {
   });
 }
 
-if (document.querySelector(".popular-countries__wiev-all")) {
-  let popularCountriesAll = document.querySelector(
-    ".popular-countries__wiev-all"
-  );
-  let wievAllCountries = document.querySelector(".wiev-all__countries");
-  wievAllCountries.addEventListener("click", function () {
-    popularCountriesAll.classList.add("popular-countries__wiev-all--opened");
-    wievAllCountries.style.display = "none";
+if (document.querySelector(".hotel-image__slider")) {
+  new Swiper(".hotel-image__slider", {
+    direction: "horizontal",
+    loop: true,
+    effect: "cube",
+    cubeEffect: {
+      shadow: false,
+      slideShadows: false,
+    },
+    autoplay: {
+      delay: 4000,
+    },
+
+    // autoHeight: false,
+    // slidesPerView: 1,
   });
 }

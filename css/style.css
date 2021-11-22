@@ -82,7 +82,7 @@ input[type=radio].visually-hidden {
 }
 
 .page-header {
-  background: url("../img/main_picture_1.png");
+  background-image: url("../img/main_picture_1.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -1226,6 +1226,305 @@ input[type=radio].visually-hidden {
   text-transform: uppercase;
 }
 
+.social-networks {
+  display: none;
+}
+
+.second-page__header {
+  background-color: #004ca1;
+  min-height: 60px;
+  margin-bottom: 10px;
+}
+
+.second-page__header-wrapper {
+  margin-bottom: 30px;
+}
+
+.second-page__header-wrapper .page-header__logo-travelgate {
+  display: block;
+}
+
+.second-page__header-wrapper .page-header__logo {
+  width: 150px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.second-page__header-wrapper .page-header__logo a {
+  color: #ffffff;
+}
+
+.second-page__header-wrapper .site-list > li:nth-child(3) {
+  padding-bottom: 20px;
+}
+
+.place-navigation__wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.place-navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.place-navigation li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  color: #45505A;
+}
+
+.place-navigation img {
+  position: relative;
+  top: -2px;
+}
+
+.city-info {
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.city-title {
+  padding-bottom: 18px;
+  color: #004CA1;
+}
+
+.city-info p {
+  font-size: 14px;
+}
+
+.city-text {
+  display: block;
+  height: 50px;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  color: #45505A;
+}
+
+.detail-text {
+  float: right;
+  font-weight: 600;
+  color: #45505A;
+  cursor: pointer;
+}
+
+.sort-hotels__wrapper {
+  margin-top: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.sort-hotels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5px 0;
+  border: 1px solid #E0E3E6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 6px;
+}
+
+.amount-of-hotels__text {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+  font-size: 14px;
+  color: #75808B;
+}
+
+.circle-bar {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #dcdcdc;
+  border-radius: 50px;
+  -webkit-box-shadow: inset 0 0 0 4px #dcdcdc;
+          box-shadow: inset 0 0 0 4px #dcdcdc;
+  -webkit-transition: 0.2s;
+  -o-transition: 0.2s;
+  transition: 0.2s;
+  margin-right: 40px;
+}
+
+.circle-bar__svg {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -3px;
+  left: -3px;
+  color: orange;
+  stroke: orange;
+  stroke-width: 14px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.circle-bar__percent {
+  text-align: center;
+  padding-top: 18px;
+  font-size: 14px;
+  color: #45505A;
+}
+
+.hotel-wrapper {
+  margin-top: 8px;
+  margin-left: 16px;
+  margin-right: 16px;
+  border: 1px solid #e0e3e6;
+  border-radius: 6px;
+}
+
+.hotel-image__slider-list {
+  position: relative;
+}
+
+.hotel-photo {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.hotel-image__slider-list {
+  cursor: pointer;
+}
+
+.review {
+  position: absolute;
+  top: 0;
+  left: 2%;
+  width: 67px;
+  height: 75px;
+  color: #004CA1;
+  text-align: center;
+  background-color: #ffffff;
+  opacity: 0.8;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.review p {
+  padding-top: 6px;
+}
+
+.review p:nth-child(1) {
+  font-size: 9px;
+  font-weight: bold;
+}
+
+.review-rating {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.number-of-review {
+  font-size: 9px;
+}
+
+.hotel-mark__svg {
+  width: 13px;
+  height: 15px;
+  position: relative;
+  top: 5px;
+  fill: transparent;
+  stroke: #75808B;
+}
+
+.hotel-describe,
+.hotel-room {
+  padding-left: 30px;
+}
+
+.hotel-title {
+  font-size: 18px;
+  padding-top: 10px;
+  color: #004CA1;
+}
+
+.hotel-describe p {
+  margin-top: -4px;
+  padding-bottom: 10px;
+  font-size: 11px;
+  color: #45505A;
+}
+
+.hotel-advantages img {
+  padding-right: 8px;
+  padding-bottom: 10px;
+}
+
+.line-bottom {
+  margin-right: 30px;
+  border: 1px solid #E0E3E6;
+}
+
+.hotel-room h3 {
+  padding-top: 16px;
+  font-size: 14px;
+}
+
+.hotel-room p {
+  color: #45505A;
+}
+
+.hotel-room p:nth-child(2) {
+  font-size: 10px;
+  font-weight: 300;
+  padding-top: 2px;
+  padding-bottom: 18px;
+}
+
+.hotel-room p {
+  font-size: 11px;
+  padding-bottom: 4px;
+}
+
+.hotel-room img {
+  padding-right: 6px;
+}
+
+.hotel-price p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 11px;
+  padding-right: 30px;
+  color: #45505A;
+}
+
+.hotel-price p:first-child {
+  padding-top: 10px;
+  font-size: 24px;
+  font-weight: 800;
+  color: #004CA1;
+}
+
+.choose-hotel__number {
+  text-align: center;
+  margin-top: 18px;
+}
+
+.swiper-wrapper {
+  -webkit-transition-timing-function: linear;
+       -o-transition-timing-function: linear;
+          transition-timing-function: linear;
+}
+
 @media (min-width: 564px) {
   .daterangepicker {
     width: auto;
@@ -1862,6 +2161,10 @@ input[type=radio].visually-hidden {
     width: 308px;
   }
 
+  .page-footer__info h3 {
+    padding-top: 80px;
+  }
+
   .page-footer__conditions {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1883,6 +2186,27 @@ input[type=radio].visually-hidden {
             order: 1;
     padding-right: 40px;
   }
+
+  .social-networks {
+    display: block;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+    position: absolute;
+    left: 80%;
+  }
+
+  .social-networks a {
+    margin-right: 20px;
+  }
+
+  .second-page__header-wrapper .site-list {
+    margin-top: -16px;
+  }
+
+  .second-page__header-wrapper .language {
+    top: 22px;
+  }
 }
 
 @media (min-width: 1786px) {
@@ -1893,7 +2217,7 @@ input[type=radio].visually-hidden {
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1109px) {
   .main-nav--closed .site-list__item {
     display: none;
   }
@@ -1907,7 +2231,7 @@ input[type=radio].visually-hidden {
   }
 }
 
-.webp .page-header { background: url(../img/main_picture_1.webp); }
+.webp .page-header { background-image: url(../img/main_picture_1.webp); }
 
 .webp .booking-rooms__wrapper { background-image: url(../img/willian-justen-de-vasconcellos.webp); }
 
