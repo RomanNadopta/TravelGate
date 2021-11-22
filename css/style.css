@@ -1398,7 +1398,7 @@ input[type=radio].visually-hidden {
 }
 
 .hotel-image__slider-list {
-  cursor: pointer;
+  position: relative;
 }
 
 .review {
@@ -1413,6 +1413,7 @@ input[type=radio].visually-hidden {
   opacity: 0.8;
   border-bottom-left-radius: 6px;
   border-bottom-right-radius: 6px;
+  z-index: 2;
 }
 
 .review p {

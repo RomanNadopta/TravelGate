@@ -262,10 +262,9 @@ if (document.querySelector(".hotel-image__slider")) {
   new Swiper(".hotel-image__slider", {
     direction: "horizontal",
     loop: true,
-    effect: "cube",
-    cubeEffect: {
-      shadow: false,
-      slideShadows: false,
+    effect: "fade",
+    fadeEffect: {
+      crossFade: true,
     },
     autoplay: {
       delay: 4000,
