@@ -1466,6 +1466,10 @@ input[type=radio].visually-hidden {
   padding-bottom: 10px;
 }
 
+.hotel-image__item {
+  cursor: pointer;
+}
+
 .line-bottom {
   margin-right: 30px;
   border: 1px solid #E0E3E6;
@@ -1518,6 +1522,87 @@ input[type=radio].visually-hidden {
 .choose-hotel__number {
   text-align: center;
   margin-top: 18px;
+}
+
+.page-pagination ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: #fff;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.page-pagination ul li {
+  list-style: none;
+  line-height: 45px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  color: #75808B;
+}
+
+.page-pagination ul li.numb {
+  list-style: none;
+  height: 45px;
+  width: 45px;
+  margin: 0 3px;
+  line-height: 45px;
+  border-radius: 50%;
+}
+
+.page-pagination ul li.numb.first {
+  margin: 0px 3px 0 -5px;
+}
+
+.page-pagination ul li.numb.last {
+  margin: 0px -5px 0 3px;
+}
+
+.page-pagination ul li.dots {
+  font-size: 22px;
+  cursor: default;
+}
+
+.page-pagination ul li.btn {
+  padding: 0 5px;
+  border-radius: 50px;
+}
+
+.page-pagination li.active,
+.page-pagination ul li.numb:hover,
+.page-pagination ul li:first-child:hover,
+.page-pagination ul li:last-child:hover {
+  color: #fff;
+  background: #FF8310;
+}
+
+.hotel-page--closed {
+  display: none;
+}
+
+.hotel-page--opened {
+  display: block;
+}
+
+.swiper-pagination {
+  --swiper-theme-color: #ff8310;
 }
 
 @media (min-width: 564px) {
