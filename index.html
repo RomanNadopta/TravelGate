@@ -193,120 +193,130 @@
           </div>
         </div>
       </div>
-      <div class="travel-select travel-select__date travel-select--closed">
-        <div class="arrow-left arrow-left__date">
-          <img src="img/icons/arrow-left.svg" alt="">
-          <span class="back">назад</span>
-        </div>
-        <label class="travel-select__wrapper travel-select__wrapper-date">
-          <span class="travel-select__where">
-            <svg class="mark-icon">
-              <use xlink:href="#mark"></use>
-            </svg>
-            <svg class="arrow">
-              <use xlink:href="#arrow-down"></use>
-            </svg>
-            <span class="when">Коли</span>
-          </span>
-          <input class="travel-date" readonly id="datetimerange-input1" type="text">
-        </label>
-      </div>
 
-      <div class="travel-select travel-select__visitors travel-select--closed">
-        <div class="arrow-left arrow-left__visitors">
-          <img src="img/icons/arrow-left.svg" alt="">
-          <span class="back">назад</span>
-        </div>
-        <div class="travel-select__wrapper travel-select__wrapper-visitors">
-          <div class="travel-select__where">
-            <svg class="mark-icon">
-              <use xlink:href="#mark"></use>
-            </svg>
-            <svg class="arrow">
-              <use xlink:href="#arrow-down"></use>
-            </svg>
-            <p class="where">Гості</p>
+      <div class="select-date__wrapper">
+        <span class="border-left"></span>
+        <div class="travel-select travel-select__date travel-select--closed">
+          <div class="arrow-left arrow-left__date">
+            <img src="img/icons/arrow-left.svg" alt="">
+            <span class="back">назад</span>
           </div>
-          <div class="amount-describe">
-            <img class="img-adult" src="./img/icons/Adult.svg" alt="">
-            <span class="count-adult__current">0</span>
-            <img class="img-child" src="./img/icons/Child.svg" alt="">
-            <span class="count-children-current">0</span>
-          </div>
-        </div>
-        <div class="travel-count__list">
-          <div class="travel-count__items-adult">
-            <p class="travel-count__title">Дорослі</p>
-            <button class="button-count button-count__adult" data-direction="minus">
-              <span class="minus"></span>
-            </button>
-            <span class="count-number count-adult">0</span>
-            <button class="button-count button-count__adult" data-direction="plus"><span class="plus"></span></button>
-          </div>
-          <div class="travel-count__items-children">
-            <p class="travel-count__title">Діти</p>
-            <button class="button-count button-count__children" data-direction="minus">
-              <span class="minus"></span>
-            </button>
-            <span class="count-number count-children">0</span>
-            <button class="button-count button-count__children" data-direction="plus"><span
-                class="plus"></span></button>
-          </div>
+          <label class="travel-select__wrapper travel-select__wrapper-date">
+            <span class="travel-select__where">
+              <svg class="mark-icon">
+                <use xlink:href="#mark"></use>
+              </svg>
+              <svg class="arrow">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+              <span class="when">Коли</span>
+            </span>
+            <input class="travel-date" readonly id="datetimerange-input1" type="text">
+          </label>
         </div>
       </div>
 
-      <div class="travel-select travel-select__nationality travel-select--closed">
-        <div class="arrow-left arrow-left__nationality">
-          <img src="img/icons/arrow-left.svg" alt="">
-          <span class="back">назад</span>
-        </div>
-        <div class="travel-select__wrapper travel-select__wrapper-nationality">
-          <div class="travel-select__where">
-            <svg class="mark-icon">
-              <use xlink:href="#mark"></use>
-            </svg>
-            <svg class="arrow">
-              <use xlink:href="#arrow-down"></use>
-            </svg>
-            <p class="where">Громадянство</p>
+      <div class="select-visitors__wrapper">
+        <span class="border-left"></span>
+        <div class="travel-select travel-select__visitors travel-select--closed">
+          <div class="arrow-left arrow-left__visitors">
+            <img src="img/icons/arrow-left.svg" alt="">
+            <span class="back">назад</span>
           </div>
-          <div class="where-describe where-describe__nationality">
-            <p class="current-describe">Оберіть громадянство</p>
+          <div class="travel-select__wrapper travel-select__wrapper-visitors">
+            <div class="travel-select__where">
+              <svg class="mark-icon">
+                <use xlink:href="#mark"></use>
+              </svg>
+              <svg class="arrow">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+              <p class="where">Гості</p>
+            </div>
+            <div class="amount-describe">
+              <img class="img-adult" src="./img/icons/Adult.svg" alt="">
+              <span class="count-adult__current">0</span>
+              <img class="img-child" src="./img/icons/Child.svg" alt="">
+              <span class="count-children-current">0</span>
+            </div>
+          </div>
+          <div class="travel-count__list">
+            <div class="travel-count__items-adult">
+              <p class="travel-count__title">Дорослі</p>
+              <button class="button-count button-count__adult" data-direction="minus">
+                <span class="minus"></span>
+              </button>
+              <span class="count-number count-adult">0</span>
+              <button class="button-count button-count__adult" data-direction="plus"><span class="plus"></span></button>
+            </div>
+            <div class="travel-count__items-children">
+              <p class="travel-count__title">Діти</p>
+              <button class="button-count button-count__children" data-direction="minus">
+                <span class="minus"></span>
+              </button>
+              <span class="count-number count-children">0</span>
+              <button class="button-count button-count__children" data-direction="plus"><span
+                  class="plus"></span></button>
+            </div>
           </div>
         </div>
-        <div class="nationality">
-          <ul class="nationality-items">
-            <li>
-              <p class="directions-items__nationality">
-                <img src="./img/icons/ukraine-flag.svg" alt="">
-                Ukraine-1
-              </p>
-            </li>
-            <li>
-              <p class="directions-items__nationality">
-                <img src="./img/icons/ukraine-flag.svg" alt="">
-                Ukraine-2
-              </p>
-            </li>
-            <li>
-              <p class="directions-items__nationality">
-                <img src="./img/icons/ukraine-flag.svg" alt="">
-                Ukraine-3
-              </p>
-            </li>
-            <li>
-              <p class="directions-items__nationality">
-                <img src="./img/icons/ukraine-flag.svg" alt="">
-                Ukraine-4
-              </p>
-            </li>
-            <li>
-              <p class="directions-items__nationality">
-                <img src="./img/icons/ukraine-flag.svg" alt="">
-                Ukraine
-              </p>
-            </li>
-          </ul>
+      </div>
+
+      <div class="select-nationality__wrapper">
+        <span class="border-left"></span>
+        <div class="travel-select travel-select__nationality travel-select--closed">
+          <div class="arrow-left arrow-left__nationality">
+            <img src="img/icons/arrow-left.svg" alt="">
+            <span class="back">назад</span>
+          </div>
+          <div class="travel-select__wrapper travel-select__wrapper-nationality">
+            <div class="travel-select__where">
+              <svg class="mark-icon">
+                <use xlink:href="#mark"></use>
+              </svg>
+              <svg class="arrow">
+                <use xlink:href="#arrow-down"></use>
+              </svg>
+              <p class="where">Громадянство</p>
+            </div>
+            <div class="where-describe where-describe__nationality">
+              <p class="current-describe">Оберіть громадянство</p>
+            </div>
+          </div>
+          <div class="nationality">
+            <ul class="nationality-items">
+              <li>
+                <p class="directions-items__nationality">
+                  <img src="./img/icons/ukraine-flag.svg" alt="">
+                  Ukraine-1
+                </p>
+              </li>
+              <li>
+                <p class="directions-items__nationality">
+                  <img src="./img/icons/ukraine-flag.svg" alt="">
+                  Ukraine-2
+                </p>
+              </li>
+              <li>
+                <p class="directions-items__nationality">
+                  <img src="./img/icons/ukraine-flag.svg" alt="">
+                  Ukraine-3
+                </p>
+              </li>
+              <li>
+                <p class="directions-items__nationality">
+                  <img src="./img/icons/ukraine-flag.svg" alt="">
+                  Ukraine-4
+                </p>
+              </li>
+              <li>
+                <p class="directions-items__nationality">
+                  <img src="./img/icons/ukraine-flag.svg" alt="">
+                  Ukraine
+                </p>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
       <div class="travel-form__button">

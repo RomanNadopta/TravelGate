@@ -97,7 +97,7 @@ var DateRangePicker;
     //html template for the picker UI
     if (typeof options.template !== "string")
       options.template =
-        '<div class="daterangepicker">' +
+        '<div class="daterangepicker daterangepicker-1">' +
         '<div class="ranges"></div>' +
         '<div class="drp-calendar left">' +
         '<div class="calendar-table"></div>' +
@@ -1534,7 +1534,7 @@ var DateRangePicker;
       );
       this.isShowing = true;
 
-      let mediaQueryMobile = window.matchMedia("(max-width: 563px)");
+      let mediaQueryMobile = window.matchMedia("(max-width: 591px)");
       function handleMobileChange(e) {
         if (e.matches) {
           let travelSelect = document.querySelector(".travel-select__date");
@@ -1552,7 +1552,7 @@ var DateRangePicker;
       }
 
       let mediaQueryTablet = window.matchMedia(
-        "(min-width: 564px) and (max-width: 1109px)"
+        "(min-width: 592px) and (max-width: 1109px)"
       );
       function handleTabletChange(e) {
         if (e.matches) {
@@ -1582,11 +1582,11 @@ var DateRangePicker;
             travelSelect.classList.contains("travel-select__date--opened") &&
             mediaQueryDesktop.matches
           ) {
-            travelSelectDateOpened.style.height = "370.5px";
+            travelSelectDateOpened.style.height = "620px";
           }
         }
       }
-
+      
       mediaQueryMobile.addEventListener("change", handleMobileChange);
       handleMobileChange(mediaQueryMobile);
       mediaQueryTablet.addEventListener("change", handleTabletChange);
@@ -1634,9 +1634,10 @@ var DateRangePicker;
 
       this.container.style.display = "none";
       this.element.dispatchEvent(
-        new CustomEvent("hide.daterangepicker", { bubbles: true, detail: this })
+        new CustomEvent("hide.daterangepicker", { bubbles: true })
       );
       this.isShowing = false;
+
       if (this.container.style.display == "none") {
         let travelSelect = document.querySelector(".travel-select__date");
         let travelSelectDateOpened = document.querySelector(

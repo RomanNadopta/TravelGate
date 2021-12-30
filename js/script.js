@@ -25,16 +25,18 @@ navToggle.addEventListener("click", function () {
   }
 });
 
-if (document.querySelector(".travel-select")) {
-  let travelSelect = function () {
-    let travelSelect = document.querySelector(".travel-select");
+if (document.querySelector(".travel-select__destination")) {
+  let travelDestinationSelect = function () {
+    let travelSelect = document.querySelector(".travel-select__destination");
     let leftArrow = document.querySelector(".arrow-left");
     let travelSelectWrapper = document.querySelector(".travel-select__wrapper");
     let selectItems = document.querySelectorAll(".directions-items li");
 
     leftArrow.addEventListener("click", function () {
-      if (travelSelect.classList.contains("travel-select--opened")) {
-        travelSelect.classList.remove("travel-select--opened");
+      if (
+        travelSelect.classList.contains("travel-select__destination--opened")
+      ) {
+        travelSelect.classList.remove("travel-select__destination--opened");
         travelSelect.classList.add("travel-select--closed");
       }
     });
@@ -42,7 +44,7 @@ if (document.querySelector(".travel-select")) {
     travelSelectWrapper.addEventListener("click", function () {
       if (travelSelect.classList.contains("travel-select--closed")) {
         travelSelect.classList.remove("travel-select--closed");
-        travelSelect.classList.add("travel-select--opened");
+        travelSelect.classList.add("travel-select__destination--opened");
       }
     });
 
@@ -56,11 +58,11 @@ if (document.querySelector(".travel-select")) {
       let currentText =
         this.closest(".travel-select").querySelector(".current-describe");
       currentText.innerText = text;
-      travelSelect.classList.remove("travel-select--opened");
+      travelSelect.classList.remove("travel-select__destination--opened");
       travelSelect.classList.add("travel-select--closed");
     }
   };
-  travelSelect();
+  travelDestinationSelect();
 }
 
 if (document.querySelector(".travel-select__date")) {
@@ -77,7 +79,6 @@ if (document.querySelector(".travel-select__date")) {
         travelSelect.classList.add("travel-select--closed");
       }
     });
-
     travelSelectWrapper.addEventListener("click", function () {
       if (travelSelect.classList.contains("travel-select--closed")) {
         travelSelect.classList.remove("travel-select--closed");

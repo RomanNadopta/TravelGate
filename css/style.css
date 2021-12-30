@@ -208,9 +208,8 @@ input[type=radio].visually-hidden {
   border-radius: 4px;
 }
 
-.travel-select--opened {
-  max-height: 650px;
-  overflow-y: auto;
+.travel-select .directions:last-child {
+  border-top: 1px solid #e0e3e6;
 }
 
 .travel-select--opened .arrow,
@@ -284,6 +283,11 @@ input[type=radio].visually-hidden {
   color: #75808B;
 }
 
+.travel-select__destination--opened {
+  max-height: 650px;
+  overflow-y: auto;
+}
+
 .mark-icon {
   stroke: #75808B;
 }
@@ -325,7 +329,6 @@ input[type=radio].visually-hidden {
 }
 
 .directions__title {
-  border-bottom: 1px solid #E0E3E6;
   padding-left: 38px;
   padding-bottom: 16px;
 }
@@ -348,7 +351,7 @@ input[type=radio].visually-hidden {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 38px;
-  border-bottom: 1px solid #E0E3E6;
+  border-top: 1px solid #E0E3E6;
   cursor: pointer;
 }
 
@@ -393,8 +396,8 @@ input[type=radio].visually-hidden {
 .travel-date {
   margin-top: 5px;
   margin-bottom: 5px;
-  margin-left: 20px;
-  width: 80%;
+  margin-left: 15px;
+  width: 90%;
   border: none;
   outline: 0;
   pointer-events: none;
@@ -412,13 +415,10 @@ input[type=radio].visually-hidden {
   border-radius: 6px;
 }
 
+.travel-select__destination--opened .arrow-left,
 .travel-select__date--opened .arrow-left {
   padding-left: 16px;
   margin-top: 24px;
-}
-
-.travel-select__date--opened {
-  height: 620px;
 }
 
 .amount-describe {
@@ -523,10 +523,6 @@ input[type=radio].visually-hidden {
 
 .travel-select--closed .travel-count__list {
   display: none;
-}
-
-.nationality-items:first-child {
-  border-top: 1px solid #E0E3E6;
 }
 
 .travel-select__nationality {
@@ -1238,7 +1234,7 @@ input[type=radio].visually-hidden {
 }
 
 .second-page__header-wrapper {
-  margin-bottom: 30px;
+  margin-bottom: 0px;
 }
 
 .second-page__header-wrapper .page-header__logo-travelgate {
@@ -1268,6 +1264,7 @@ input[type=radio].visually-hidden {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 30px;
 }
 
 .place-navigation li {
@@ -1472,6 +1469,7 @@ input[type=radio].visually-hidden {
 }
 
 .line-bottom {
+  margin-left: 30px;
   margin-right: 30px;
   border: 1px solid #E0E3E6;
 }
@@ -2026,24 +2024,6 @@ input::-webkit-inner-spin-button {
   }
 }
 
-@media (min-width: 730px) {
-  .daterangepicker .ranges {
-    width: auto;
-  }
-
-  .daterangepicker .ranges {
-    float: left;
-  }
-
-  .daterangepicker.rtl .ranges {
-    float: right;
-  }
-
-  .daterangepicker .drp-calendar.left {
-    clear: none !important;
-  }
-}
-
 @media (min-width: 1110px) {
   .page-header__wrapper {
     position: relative;
@@ -2226,9 +2206,6 @@ input::-webkit-inner-spin-button {
     margin: 0;
     padding-top: 10px;
     border: none;
-    border-radius: 0px;
-    border-left: 1px solid grey;
-    width: 30%;
   }
 
   .travel-select__destination {
@@ -2238,12 +2215,24 @@ input::-webkit-inner-spin-button {
     border-bottom-left-radius: 4px;
   }
 
+  .travel-select__destination--opened {
+    height: 420px;
+  }
+
   .travel-select__date {
     width: 274px;
   }
 
   .travel-select__visitors {
     width: 196px;
+    border-radius: 0;
+  }
+
+  .travel-select--opened .travel-count__list {
+    position: absolute;
+    width: 240px;
+    background-color: white;
+    border-bottom-left-radius: 6px;
   }
 
   .travel-select--opened .travel-select__nationality {
@@ -2254,6 +2243,22 @@ input::-webkit-inner-spin-button {
     width: 180px;
     -o-text-overflow: ellipsis;
        text-overflow: ellipsis;
+    border-radius: 0;
+  }
+
+  .where-describe__nationality {
+    width: 120px;
+  }
+
+  .nationality {
+    position: absolute;
+    min-width: 180px;
+    max-width: 364px;
+    max-height: 268px;
+    overflow-y: auto;
+    background-color: white;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
   }
 
   .travel-form__search {
@@ -2264,18 +2269,31 @@ input::-webkit-inner-spin-button {
     padding: 16px 16px 0px 0px;
   }
 
-  .where-describe__nationality {
-    width: 120px;
-  }
-
-  .travel-select--opened {
-    height: 420px;
-    overflow-y: auto;
-  }
-
-  .travel-select--opened .travel-count__list {
+  .border-left {
+    display: inline-block;
     position: absolute;
-    width: 240px;
+    height: 86px;
+    border-left: 1px solid grey;
+  }
+
+  .daterangepicker .ranges {
+    width: auto;
+  }
+
+  .daterangepicker-1 {
+    width: 263px;
+  }
+
+  .daterangepicker .ranges {
+    float: left;
+  }
+
+  .daterangepicker.rtl .ranges {
+    float: right;
+  }
+
+  .daterangepicker .drp-calendar.left {
+    clear: none !important;
   }
 
   .popular-places {
@@ -2650,6 +2668,156 @@ input::-webkit-inner-spin-button {
   .second-page__header-wrapper .language {
     top: 22px;
   }
+
+  .hotel-image__wrapper {
+    width: 250px;
+    line-height: 0;
+  }
+
+  .hotels {
+    display: block !important;
+  }
+
+  .hotel-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .hotel-details {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .hotel-describe,
+  .hotel-room {
+    padding-left: 0;
+  }
+
+  .review {
+    line-height: 12px;
+  }
+
+  .choose-hotel__number {
+    text-align: center;
+    height: auto;
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .second-page__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .hotel-details__wrapper {
+    position: relative;
+    width: 100%;
+    margin-left: 30px;
+    margin-right: 18px;
+  }
+
+  .hotel-price {
+    position: absolute;
+    right: 0;
+  }
+
+  .hotel-price p {
+    padding-right: 0;
+  }
+
+  .line-bottom {
+    margin-left: 0;
+    position: absolute;
+    width: 100%;
+  }
+
+  .expanded-filter {
+    min-width: 400px;
+    background-color: #DCE7F3;
+  }
+
+  .filter-button,
+  .filter-button__apply {
+    display: none !important;
+  }
+
+  .travel-form__second {
+    display: block;
+    margin-top: 20px;
+    margin-left: 16px;
+    margin-right: 16px;
+    height: auto;
+    background-color: #fff;
+    border: 1px solid #E0E3E6;
+    border-radius: 6px;
+  }
+
+  .travel-select__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    border-left: none;
+  }
+
+  .travel-form__search-second {
+    margin-bottom: 10px;
+    padding: 18px;
+  }
+
+  .travel-select__second--closed {
+    border: none;
+    border-radius: 0;
+    border-bottom: 1px solid #E0E3E6;
+    font-size: 13px;
+  }
+
+  .expanded-filter--opened {
+    padding-top: 10px;
+    background-color: #DCE7F3;
+    display: block;
+    position: static;
+    width: 30%;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .expanded-filter--closed {
+    padding-top: 10px;
+    position: static;
+    width: 30%;
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .travel-select--opened .travel-count__second-page {
+    position: relative;
+    left: 50%;
+    -webkit-transform: translate(-60%);
+        -ms-transform: translate(-60%);
+            transform: translate(-60%);
+  }
+
+  .nationality__second-page {
+    position: relative;
+  }
 }
 
 @media (min-width: 1786px) {
@@ -2671,6 +2839,43 @@ input::-webkit-inner-spin-button {
 
   .main-nav--closed .site-list {
     display: none;
+  }
+
+  .expanded-filter--opened {
+    padding-top: 10px;
+    background-color: #DCE7F3;
+    display: block;
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0%);
+        -ms-transform: translate(-50%, 0%);
+            transform: translate(-50%, 0%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 1;
+    z-index: 2;
+  }
+
+  .expanded-filter--closed {
+    padding-top: 10px;
+    position: absolute;
+    width: 100%;
+    -webkit-transform: translateX(-100%);
+        -ms-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    opacity: 0;
+    z-index: 2;
+  }
+}
+
+@media (max-width: 591px) {
+  .daterangepicker-1 {
+    width: 263px;
   }
 }
 
