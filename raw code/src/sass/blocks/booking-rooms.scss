@@ -1,0 +1,80 @@
+.booking-rooms {
+  padding-top: 70px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.booking-rooms__wrapper {
+  background-image: url("../img/willian-justen-de-vasconcellos.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 8px;
+}
+
+.booking-rooms__title {
+  text-align: center;
+  font-size: 37px;
+  line-height: 44px;
+
+  padding-top: 82px;
+  padding-bottom: 48px;
+  color: #45505a;
+}
+
+.booking-rooms__button {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-bottom: 16px;
+}
+
+.booking-rooms__link {
+  text-align: center;
+}
+
+.willian-justen {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+
+  .booking-rooms {
+    position: relative;
+    padding-top: 160px;
+    padding-left: 0px;
+    padding-right: 0px;
+    overflow: hidden;
+  }
+
+  .booking-rooms__wrapper {
+    position: relative;
+    margin: 0 auto;
+    width: 1086px;
+    height: 274px;
+
+    background-image: url("../img/willian-justen-de-vasconcellos-desktop.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .booking-rooms__title {
+    text-align: left;
+    width: 300px;
+    margin: 0 auto;
+  }
+
+  .booking-rooms__button {
+    position: absolute;
+    padding-right: 68px;
+    top: 36%;
+    right: 0;
+  }
+}
+
+@media (min-width: 1786px) {
+
+  .willian-justen {
+    display: block;
+    position: absolute;
+    top: -70%;
+  }
+}

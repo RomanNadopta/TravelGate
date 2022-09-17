@@ -1,0 +1,36 @@
+.circle-bar {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  color: #dcdcdc;
+  border-radius: 50px;
+  box-shadow: inset 0 0 0 4px #dcdcdc;
+  transition: .2s;
+  // margin-top: -18px;
+  margin-right: 40px;
+  // transform: translateY(25px);
+}
+
+
+
+
+.circle-bar__svg {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  top: -3px;
+  left: -3px;
+  color: orange;
+  stroke: orange;
+  stroke-width: 14px;
+  box-sizing: border-box;
+}
+
+.circle-bar__percent {
+
+  text-align: center;
+  padding-top: 18px;
+
+  font-size: 14px;
+  color: #45505A;
+}

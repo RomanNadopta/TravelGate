@@ -1,0 +1,87 @@
+
+.place-navigation__wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.place-navigation {
+  display: flex;
+  margin-top: 30px;
+}
+
+.place-navigation li {
+  display: flex;
+  font-size: 14px;
+  font-weight: 300;
+  color: #45505A;
+}
+
+.place-navigation img {
+  position: relative;
+  top: -2px;
+}
+
+.city-info {
+  padding-top: 20px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+.city-title {
+  padding-bottom: 18px;
+  color: #004CA1;
+}
+
+.city-info p {
+  font-size: 14px;
+}
+
+.city-text {
+  display: block;
+  height: 50px;
+  flex-wrap: nowrap;
+  overflow: hidden;
+
+  text-overflow: ellipsis;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+
+  color: #45505A;
+}
+
+
+.detail-text {
+  float: right;
+  font-weight: 600;
+
+  color: #45505A;
+  cursor: pointer;
+}
+
+.sort-hotels__wrapper {
+  margin-top: 50px;
+  margin-left: 16px;
+  margin-right: 16px;
+}
+
+.sort-hotels {
+  display: flex;
+  justify-content: space-around;
+  padding: 5px 0;
+  border: 1px solid #E0E3E6;
+  box-sizing: border-box;
+  border-radius: 6px;
+
+}
+
+.amount-of-hotels__text {
+  display: inline-block;
+  position: relative;
+  top: 25%;
+  font-size: 14px;
+
+  color: #75808B;
+}

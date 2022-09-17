@@ -1,0 +1,149 @@
+.page-header {
+  background-image: url("../img/main_picture_1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.page-header__title {
+  display: none;
+}
+
+.page-header__logo-tg {
+  display: none;
+}
+
+.page-header__wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-bottom: 90px;
+}
+
+.page-header__logo {
+  position: relative;
+  text-align: center;
+  top: 16px;
+
+  letter-spacing: 1px;
+  color: white;
+}
+
+.page-header__logo-travelgate {
+  text-transform: uppercase;
+  font-family: "SairaCondensed";
+  font-size: 28px;
+  letter-spacing: 1px;
+}
+
+.advantages {
+  display: none;
+}
+
+.page-header__wrapper-footer {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .page-header__wrapper {
+    position: relative;
+    padding-left: 90px;
+    padding-right: 90px;
+  }
+
+  .page-header__logo-travelgate {
+    display: none;
+  }
+
+  .page-header__logo {
+    display: flex;
+    justify-content: center;
+  }
+
+  .page-header__logo-tg {
+    position: relative;
+    top: 24px;
+    display: block;
+    font-size: 28px;
+    font-family: "SairaCondensed";
+    text-transform: uppercase;
+  }
+
+  .page-header__title {
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 220px;
+
+    color: #fff;
+  }
+
+  .page-header__title h1 {
+    font-family: "SairaCondensed";
+    font-size: 86px;
+    letter-spacing: 6px;
+  }
+
+  .page-header__title p {
+    font-weight: 300;
+    font-size: 28px;
+  }
+
+  .advantages {
+    display: block;
+    padding-top: 176px;
+  }
+
+  .advantages-list {
+    display: flex;
+    justify-content: center;
+    margin-left: 75px;
+  }
+
+  .advantages-list li {
+    margin-right: 128px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+  }
+
+  .advantages-icon__bed {
+    fill: #fff;
+  }
+
+  .advantages-icon__canada {
+    fill: #fff;
+  }
+
+  .advantages-icon__earth {
+    fill: #fff;
+  }
+
+  .amount-of-hotels {
+    margin-top: 14px;
+  }
+
+  .amount-of-countries {
+    margin-top: 4px;
+  }
+
+  .advantages-numbers {
+    margin-top: 20px;
+    font-size: 32px;
+  }
+
+  .advantages-text {
+    margin-top: 16px;
+    font-size: 14px;
+    font-weight: 700;
+  }
+
+  .page-header__wrapper-footer {
+    display: block;
+    margin-top: 146px;
+    height: 70px;
+    background-color: #004ca1;
+  }
+
+  .page-header__wrapper-footer .page-header__logo-tg {
+    top: 4px;
+  }
+}

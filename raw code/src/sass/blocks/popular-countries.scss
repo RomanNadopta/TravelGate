@@ -1,0 +1,115 @@
+.img-countries {
+  width: 100%;
+  min-height: 128px;
+  height: auto;
+  z-index: 1;
+
+  border-radius: 4px;
+  mix-blend-mode: multiply;
+}
+
+.popular-countries__wiev-all--closed {
+  display: none;
+}
+
+.popular-countries__wiev-all--opened {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-countries__images-title__country {
+  font-size: 23px;
+}
+
+.popular-countries__images-title__hotel {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.popular-countries__more--photos {
+  display: none;
+}
+
+
+@media (min-width: $desktop-width) {
+
+  .popular-countries__wiev-all--opened {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .popular-countries__wrapper {
+    position: relative;
+  }
+
+
+  .popular-countries__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-countries {
+    width: 255px;
+    height: 255px;
+  }
+
+  .big-photos {
+    height: 530px;
+  }
+
+  .popular-countries__list div:nth-child(2) {
+    position: relative;
+    order: 2;
+    bottom: 33.4%;
+  }
+
+  .popular-countries__list div:nth-child(4) {
+    position: relative;
+    order: 1;
+    right: 50%;
+    top: 66.5%;
+
+  }
+
+  .popular-countries__list div:nth-child(5) {
+    position: relative;
+    top: 33.2%;
+  }
+
+  .popular-countries__more--photos {
+    display: flex;
+  }
+
+  .popular-countries__more--photos>div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 50%;
+  }
+
+  .popular-countries__more--photos>div:nth-child(2) {
+    position: absolute;
+    top: 552px;
+    left: 50%;
+  }
+
+  .popular-countries__more--photos>div:nth-child(3) {
+    position: absolute;
+    top: 278px;
+    right: 3px;
+  }
+
+  .popular-countries__wiev-all>div:nth-child(1) {
+    position: absolute;
+    bottom: 25.2%;
+  }
+
+  .popular-countries__wiev-all>div:nth-child(2) {
+    position: absolute;
+    top: 0;
+    left: 74.8%;
+  }
+
+}

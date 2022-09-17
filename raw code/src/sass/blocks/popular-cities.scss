@@ -1,0 +1,126 @@
+.img-cities {
+  width: 100%;
+  z-index: 1;
+
+  border-radius: 4px;
+  mix-blend-mode: multiply;
+}
+
+.popular-cities__images-title__city {
+  font-size: 23px;
+}
+
+.popular-cities__images-title__hotel {
+  margin-top: 10px;
+  font-weight: 100;
+  font-size: 14px;
+}
+
+.popular-cities__wiev-all--closed {
+  display: none;
+}
+
+
+.popular-cities__wiev-all--opened {
+  display: flex;
+  flex-direction: column;
+}
+
+.popular-cities__more--photos {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+
+  .popular-cities__wiev-all--opened {
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+  }
+
+  .popular-cities__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .img-cities {
+    width: 255px;
+    height: 255px;
+  }
+
+  .big-photos {
+    height: 530px;
+  }
+
+  .popular-cities__list div:nth-child(2) {
+    position: relative;
+    right: 25%;
+    top: 50%;
+    order: 2;
+  }
+
+  .popular-cities__list div:nth-child(3) {
+    position: relative;
+    top: 100%;
+    order: 1;
+  }
+
+  .popular-cities__list div:nth-child(4) {
+    position: relative;
+    order: 2;
+    margin-right: 0;
+  }
+
+  .popular-cities__list div:nth-child(5) {
+    position: relative;
+    top: 100%;
+
+  }
+
+  .popular-cities__more--photos {
+    display: flex;
+  }
+
+  .popular-cities__more--photos>div:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 25%;
+    order: 2;
+  }
+
+  .popular-cities__more--photos>div:nth-child(2) {
+    position: relative;
+    bottom: 200%;
+    left: 200%;
+
+  }
+
+  .popular-cities__more--photos>div:nth-child(3) {
+    position: absolute;
+    top: 279px;
+    right: 2px;
+  }
+
+  .popular-cities__wiev-all>div:nth-child(1) {
+    position: absolute;
+    left: 74.8%;
+    top: 0;
+  }
+
+  .popular-cities__wiev-all>div:nth-child(2) {
+    position: absolute;
+    bottom: 40%;
+  }
+
+  .wiev-all {
+    position: absolute;
+    top: 24.8%;
+    left: 75.5%;
+  }
+
+  .wiev-all__cities-button {
+    width: 255px;
+  }
+
+}

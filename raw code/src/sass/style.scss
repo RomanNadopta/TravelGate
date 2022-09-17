@@ -1,0 +1,34 @@
+@mixin font($font_name, $file_name, $weight, $style) {
+  @font-face {
+    font-family: $font_name;
+    font-display: swap;
+    src: url("../fonts/#{$file_name}.woff") format("woff"),
+    url("../fonts/#{$file_name}.woff2") format("woff2");
+    font-weight: #{$weight};
+    font-style: #{$style};
+  }
+}
+
+@import "fonts";
+@import "mixins";
+@import "scaffolding";
+@import "variables";
+
+@import "./blocks/page-header";
+@import "./blocks/main-nav";
+@import "./blocks/travel-select";
+@import "./blocks/calendar-range";
+@import "./blocks/popular-places";
+@import "./blocks/popular-cities";
+@import "./blocks/booking-rooms";
+@import "./blocks/popular-countries";
+@import "./blocks/about-us";
+@import "./blocks/page-footer";
+
+@import "./blocks/second-page-header";
+@import "./blocks/hotel-sort";
+@import "./blocks/circle-bar";
+@import "./blocks/hotel-list";
+@import "./blocks/pagonation";
+@import "./blocks/filter";
+

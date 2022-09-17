@@ -1,0 +1,38 @@
+.second-page__header {
+  background-color: #004ca1;
+  min-height: 60px;
+}
+
+.second-page__header-wrapper {
+  margin-bottom: 0px;
+}
+
+.second-page__header-wrapper .page-header__logo-travelgate {
+  display: block;
+}
+
+.second-page__header-wrapper .page-header__logo {
+  width: 150px;
+  margin: 0 auto;
+  z-index: 1;
+}
+
+.second-page__header-wrapper .page-header__logo a {
+  color: #ffffff;
+}
+
+.second-page__header-wrapper .site-list>li:nth-child(3) {
+  padding-bottom: 20px;
+}
+
+
+@media(min-width: $desktop-width) {
+
+  .second-page__header-wrapper .site-list {
+    margin-top: -16px;
+  }
+
+  .second-page__header-wrapper .language {
+    top: 22px;
+  }
+}

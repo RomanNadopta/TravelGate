@@ -1,0 +1,120 @@
+.main__about-us {
+  padding-top: 52px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.about-us__advantages {
+  padding-top: 48px;
+}
+
+.about-us__title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 28px;
+  padding-bottom: 52px;
+
+  color: #006CE6;
+}
+
+.about-us__article {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  padding-bottom: 38px;
+
+  color: #45505A;
+}
+
+.reservation {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.reservation-icon {
+  color: #1792D1;
+  width: 50%;
+}
+
+.reservation-icon svg {
+  fill: #1792D1;
+}
+
+.reservation-icon__bed {
+  margin-top: 0px;
+}
+
+.reservation-icon__canada {
+  margin-top: -14px;
+}
+
+.reservation-icon__earth {
+  margin-top: -10px;
+}
+
+.about-us__advantages-describe p {
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 20px;
+  width: 114px;
+}
+
+.about-us__advantages-describe {
+  display: flex;
+  justify-content: center;
+  padding-top: 18px;
+  padding-bottom: 42px;
+}
+
+.about-us__mobile-photo {
+  width: 100%;
+  min-height: 412px;
+}
+
+.mobile-photo {
+
+  width: 100%;
+
+  border-radius: 4px;
+}
+
+@media (min-width: $desktop-width) {
+  .main__about-us {
+    width: 1070px;
+    margin: 0 auto;
+    margin-top: 196px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about-us__info {
+    width: 38%;
+  }
+
+  .about-us__title {
+    font-size: 37px;
+    padding-bottom: 40px;
+    text-align: left;
+    color: #004CA1;
+  }
+
+  .about-us__mobile-photo {
+    position: absolute;
+    right: 16px;
+    width: 56%;
+    min-height: 300px;
+  }
+
+  .reservation {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .reservation-icon {
+    width: 8%;
+  }
+
+}

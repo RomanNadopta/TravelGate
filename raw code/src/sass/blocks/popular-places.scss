@@ -1,0 +1,89 @@
+.popular-places__wrapper {
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.popular-places__images-list {
+  display: inline-flex;
+  overflow: hidden;
+}
+
+.popular-places__title {
+  margin-top: 54px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 800;
+
+  color: #006CE6;
+}
+
+.popular-places__images-title {
+  position: absolute;
+  margin-left: 18px;
+  bottom: 20%;
+  color: #fff;
+  z-index: 2;
+}
+
+.popular-places__items {
+  min-height: 128px;
+  padding-top: 18px;
+  background: linear-gradient(0deg, #000000 0%, rgba(0, 0, 0, 0) 34.84%);
+  border-radius: 4px;
+  height: auto;
+}
+
+.swiper-button-next {
+  top: 55%;
+
+  color: #fff;
+  --swiper-navigation-size: 22px;
+}
+
+.wiev-all {
+  margin-top: 16px;
+  text-align: center;
+  cursor: pointer;
+}
+
+@media (min-width: $desktop-width) {
+  .popular-places {
+    max-width: 1086px;
+    margin: 0 auto;
+  }
+
+  .popular-places__title {
+    text-align: left;
+    font-size: 37px;
+    margin-left: 8px;
+    color: #004CA1;
+  }
+
+  .popular-places__images-list {
+    width: 255px;
+    height: auto;
+    margin-right: 8px;
+    margin-left: 8px;
+    border-radius: 4px;
+  }
+
+  .popular-places__wrapper {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .wiev-all {
+    position: absolute;
+    top: 24.8%;
+    left: 75.5%;
+  }
+
+  .wiev-all__button {
+    width: 255px;
+  }
+
+}
